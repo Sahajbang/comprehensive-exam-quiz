@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprehensive Exam Quiz — 2022</title>
+  <meta name="description" content="Practice with 1,441 comprehensive exam questions. Take a full continuous test or a custom random quiz with instant or end-of-test feedback." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Screens are rendered by JS -->
+    <div id="loading-screen" class="screen active">
+      <div class="loading-content">
+        <div class="logo-mark">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+            <rect width="56" height="56" rx="16" fill="url(#grad1)"/>
+            <path d="M14 28L24 38L42 18" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="grad1" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#8b5cf6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h1 class="loading-title">QuizBank</h1>
+        <p class="loading-sub">Loading question bank…</p>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="load-progress"></div>
+        </div>
+        <p class="loading-status" id="load-status">Parsing 1,441 questions…</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="parser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
